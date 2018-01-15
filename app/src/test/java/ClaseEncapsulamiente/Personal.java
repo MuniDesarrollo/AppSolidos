@@ -4,32 +4,40 @@ package ClaseEncapsulamiente;
  * Created by INFO_LAPTOP on 15/01/2018.
  */
 
-public class Ciudadano extends Usuario {
-    private  int idTciudadano;
+public class Personal extends  Usuario {
+    private int idTpersonal;
+    private String dni;
     private String nombre;
     private String apellido;
-    private String dni;
-    private  String telefono;
+    private String telefono;
 
-    public Ciudadano()
+    public Personal()
     {
         super();
     }
 
-    public  Ciudadano(String _nombre, String _apellido, String _dni , String _telefono)
+    public  Personal(String _dni, String _nombre, String _apellido, String _telefono)
     {
+        this.setDni(_dni);
         this.setNombre(_nombre);
         this.setApellido(_apellido);
-        this.setDni(_dni);
         this.setTelefono(_telefono);
     }
 
-    public int getIdTciudadano() {
-        return idTciudadano;
+    public int getIdTpersonal() {
+        return idTpersonal;
     }
 
-    public void setIdTciudadano(int idTciudadano) {
-        this.idTciudadano = idTciudadano;
+    public void setIdTpersonal(int idTpersonal) {
+        this.idTpersonal = idTpersonal;
+    }
+
+    public String getDni() {
+        return dni;
+    }
+
+    public void setDni(String dni) {
+        this.dni = dni;
     }
 
     public String getNombre() {
@@ -46,14 +54,6 @@ public class Ciudadano extends Usuario {
 
     public void setApellido(String apellido) {
         this.apellido = apellido;
-    }
-
-    public String getDni() {
-        return dni;
-    }
-
-    public void setDni(String dni) {
-        this.dni = dni;
     }
 
     public String getTelefono() {
