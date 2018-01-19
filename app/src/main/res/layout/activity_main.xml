@@ -9,6 +9,12 @@
     android:paddingTop="20dp">
 
     <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LLENE SUS DATOS COMPLETO" />
+
+    <TextView
         android:id="@+id/textView4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,7 +55,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="phone" />
+        android:inputType="phone"
+        android:maxLength="9" />
 
     <TextView
         android:id="@+id/textView7"
